@@ -12,7 +12,7 @@ export PYTHONUNBUFFERED="True"
 
 GPU_ID=$1
 
-LOG="log.txt.`date +'%Y-%m-%d_%H-%M-%S'`"
+LOG="logs/pnasnet.txt.`date +'%Y-%m-%d_%H-%M-%S'`"
 exec &> >(tee -a "$LOG")
 echo Logging output to "$LOG"
 
